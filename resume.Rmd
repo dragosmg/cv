@@ -93,7 +93,9 @@ Contributed to several R packages, such as:
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with the [**pagedown**](https://github.com/rstudio/pagedown) R package. 
+
+Adapted from [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
 
 Source code: [github.com/dragosmg/cv](https://github.com/dragosmg/cv).
 
