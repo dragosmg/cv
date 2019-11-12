@@ -54,10 +54,10 @@ Contact {#contact}
 
 
 
-- <i class="fa fa-envelope"></i> dragos.mold@gmail.com
+- <i class="fa fa-envelope"></i> dragos.mold (at) gmail (dot) com
 - <i class="fa fa-twitter"></i> @dragosmg
 - <i class="fa fa-github"></i> github.com/dragosmg
-- <i class="fa fa-phone"></i> +44 7857 248864
+- <i class="fa fa-phone"></i> 
 
 
 
