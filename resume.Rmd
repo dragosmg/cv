@@ -70,7 +70,7 @@ skills <- tribble(
   ~skill,               ~level,
   "R programming",      4.5,
   "Data wrangling",     4.5,
-  "R ackage building",   4,
+  "R package building",   4,
   "Unit testing, CI",   3.5,
   "Shiny",              3,
   "SQL",                3,
