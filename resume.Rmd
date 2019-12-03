@@ -54,10 +54,10 @@ Contact {#contact}
 
 
 
-- <i class="fa fa-envelope"></i> dragos.mold (at) gmail (dot) com
+- <i class="fa fa-envelope"></i> dragos.mold@gmail.com
 - <i class="fa fa-twitter"></i> @dragosmg
 - <i class="fa fa-github"></i> github.com/dragosmg
-- <i class="fa fa-phone"></i> 
+- <i class="fa fa-phone"></i> +44 7857 248864
 
 
 
@@ -70,12 +70,12 @@ skills <- tribble(
   ~skill,               ~level,
   "R programming",      4.5,
   "Data wrangling",     4.5,
-  "Package building",   4,
+  "R ackage building",   4,
   "Unit testing, CI",   3.5,
+  "Shiny",              3,
   "SQL",                3,
   "Debugging",          3,
-  "git",                2.5,
-  "bash",               2
+  "git",                2.5
 )
 build_skill_bars(skills)
 ```
@@ -94,8 +94,6 @@ Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
 Made with the [**pagedown**](https://github.com/rstudio/pagedown) R package. 
-
-Adapted from [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
 
 Source code: [github.com/dragosmg/cv](https://github.com/dragosmg/cv).
 
