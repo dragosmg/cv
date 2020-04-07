@@ -68,14 +68,16 @@ Technical Skills {#skills}
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
-  "R programming",      4.5,
-  "Data wrangling",     4.5,
+  "R programming",        5,
+  "Data wrangling",       4.5,
   "R package building",   4,
-  "Unit testing, CI",   3.5,
-  "Shiny",              3,
-  "SQL",                3,
-  "Debugging",          3,
-  "git",                2.5
+  "Unit testing, CI",     3.5,
+  "Shiny",                3,
+  "SQL",                  3,
+  "Debugging",            3,
+  "git",                  2.5,
+  "bash",                 2.5,
+  "cron",                 2
 )
 build_skill_bars(skills)
 ```
@@ -85,9 +87,14 @@ build_skill_bars(skills)
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
 
-Contributed to several R packages, such as:
+R packages:
 
-- {usethis}, {lintr}, {devtools}, {demoR}
+- {usethis}, {lintr}, {devtools}, {demoR}, {withr}
+
+
+Books:
+
+- [Advanced R](https://adv-r.hadley.nz/introduction.html#intro-ack), by Hadley Wickham 
 
 
 Disclaimer {#disclaimer}
@@ -109,25 +116,25 @@ Dragos Moldovan-Grünfeld {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "A data scientist with a strong multidisciplinary background and 5+ years’ experience in applying analytical techniques to commercial and regulatory challenges."
+intro_text <- "A full-stack data scientist with a strong multidisciplinary background and 5+ years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. A certified RStudio tidyverse trainer with a passion for helping others on their learning journey."
 
 
 cat(sanitize_links(intro_text))
 ```
 
 
-Selected Positions {data-icon=suitcase}
+Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-```{r}
-position_data %>% print_section('positions')
+```{r experience}
+position_data %>% print_section("positions")
 ```
 
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-```{r}
-position_data %>% print_section('education')
+```{r education}
+position_data %>% print_section("education")
 ```
 
