@@ -116,7 +116,7 @@ Dragos Moldovan-Grünfeld {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "A full-stack data scientist with a strong multidisciplinary background and 5+ years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. A certified RStudio tidyverse trainer with a passion for helping others on their learning journey."
+intro_text <- "A full-stack data scientist passionate about extracting value from data, Dragos has over 4 years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. An enthusiastic learner, Dragos is an accomplished trainer and enjoys mentoring and assisting others on their learning journey."
 
 
 cat(sanitize_links(intro_text))
