@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Dragoș Moldovan-Grünfeld's Resume
+author: Dragoș Moldovan-Grünfeld
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -12,7 +12,7 @@ output:
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
-  results='asis', 
+  results = 'asis', 
   echo = FALSE
 )
 library(tidyverse)
@@ -47,35 +47,37 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](radar.png){width=100%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> dragos.mold@gmail.com
+- <i class="fa fa-twitter"></i> @dragosmg
+- <i class="fa fa-github"></i> github.com/dragosmg
+- <i class="fa fa-phone"></i> +44 7857 248864
 
 
 
-Language Skills {#skills}
+Technical Skills {#skills}
 --------------------------------------------------------------------------------
 
 
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
-  "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
+  "R programming",        5,
+  "Data wrangling",       4.5,
+  "R package building",   4.5,
+  "Shiny",                4,
+  "Unit testing, CI",     3.5,
+  "SQL",                  3,
+  "Debugging",            3,
+  "git",                  3,
+  "bash",                 2.5,
+  "cron",                 2
 )
 build_skill_bars(skills)
 ```
@@ -85,26 +87,22 @@ build_skill_bars(skills)
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/nstrayer/<name>`
+R packages:
+
+- {usethis}, {lintr}, {devtools}, {demoR}, {withr}
 
 
-- `shinysense`: R package to use sensor data in Shiny apps
-- `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
-- `slid3r`: D3 add-on for fully svg slider inputs
+Books:
 
-
-More info {#more-info}
---------------------------------------------------------------------------------
-
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+- [Advanced R](https://adv-r.hadley.nz/introduction.html#intro-ack), by Hadley Wickham 
 
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with the [**pagedown**](https://github.com/rstudio/pagedown) R package. 
 
-Source code: [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+Source code: [github.com/dragosmg/cv](https://github.com/dragosmg/cv).
 
 Last updated on `r Sys.Date()`.
 
@@ -114,43 +112,29 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Dragos Moldovan-Grünfeld {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
-
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
-"
+intro_text <- "A full-stack data scientist passionate about extracting value from data, Dragos has over 4 years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. An enthusiastic learner, Dragos is an accomplished trainer and enjoys mentoring and assisting others on their learning journey."
 
 
 cat(sanitize_links(intro_text))
 ```
 
 
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r experience}
+position_data %>% print_section("positions")
+```
+
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-```{r}
-position_data %>% print_section('education')
+```{r education}
+position_data %>% print_section("education")
 ```
-
-
-
-Selected Positions {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('positions')
-```
-
-Selected Writing {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-
-```{r}
-position_data %>% print_section('writings')
-```
-
 
