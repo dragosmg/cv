@@ -71,10 +71,10 @@ skills <- tribble(
   "R programming",        5,
   "Data wrangling",       4.5,
   "R package building",   4.5,
-  "Shiny",                4,
-  "Unit testing, CI",     3.5,
+  "Unit testing, CI",     4,
+  "Shiny",                3.5,
+  "Debugging",            3.5,
   "SQL",                  3,
-  "Debugging",            3,
   "git",                  3,
   "bash",                 2.5,
   "cron",                 2
@@ -86,8 +86,11 @@ build_skill_bars(skills)
 
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
+R packages (author):
 
-R packages:
+- {rocnp}
+
+R packages (contributor):
 
 - {usethis}, {lintr}, {devtools}, {demoR}, {withr}
 
@@ -112,11 +115,11 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Dragos Moldovan-Grünfeld {#title}
+Dragoș Moldovan-Grünfeld {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "A full-stack data scientist passionate about extracting value from data, Dragos has over 4 years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. An enthusiastic learner, Dragos is an accomplished trainer and enjoys mentoring and assisting others on their learning journey."
+intro_text <- "A passionate R developer with over 10 years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. An active member of the R open source community with contributions to notable packages. An RStudio Certified Trainer, passionate about mentoring and assisting others on their R learning journey."
 
 
 cat(sanitize_links(intro_text))
