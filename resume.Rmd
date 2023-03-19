@@ -7,6 +7,7 @@ output:
     css: ['css/custom_resume.css', 'css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
+knit: pagedown::chrome_print
 ---
 
 
@@ -69,14 +70,16 @@ Technical Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R programming",        5,
-  "Data wrangling",       4.5,
+  "Unit testing",         5,
+  "Debugging",            4.5,
   "R package building",   4.5,
-  "Unit testing, CI",     4,
-  "Shiny",                3.5,
-  "Debugging",            3.5,
-  "SQL",                  3,
-  "git",                  3,
-  "bash",                 2.5,
+  "Data wrangling",       4,
+  "Shiny",                4,
+  "SQL",                  3.5,
+  "git",                  3.5,
+  "CI/CD",                3,
+  "Python",               2.5,
+  "bash",                 2,
   "cron",                 2
 )
 build_skill_bars(skills)
@@ -86,26 +89,23 @@ build_skill_bars(skills)
 
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
-R packages (author):
+R CRAN packages (creator / maintainer)
 
 - {rocnp}
 
-R packages (contributor):
+R CRAN packages (author):
 
-- {usethis}, {lintr}, {devtools}, {demoR}, {withr}
+- {arrow}
 
+R packages contributions:
 
-Books:
-
-- [Advanced R](https://adv-r.hadley.nz/introduction.html#intro-ack), by Hadley Wickham 
+- {usethis}, {lintr}, {devtools}, {withr}
 
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the [**pagedown**](https://github.com/rstudio/pagedown) R package. 
-
-Source code: [github.com/dragosmg/cv](https://github.com/dragosmg/cv).
+Made with the [**pagedown**](https://github.com/rstudio/pagedown) R package.
 
 Last updated on `r Sys.Date()`.
 
@@ -119,7 +119,7 @@ Dragoș Moldovan-Grünfeld {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "A passionate R developer with over 10 years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. An active member of the R open source community with contributions to notable packages. An RStudio Certified Trainer, passionate about mentoring and assisting others on their R learning journey."
+intro_text <- "A passionate R developer with over 10 years’ experience in applying advanced analytical techniques to commercial and regulatory challenges. An active member of the R open source community with contributions to notable packages. An RStudio Certified Tidyverse Trainer, passionate about mentoring and assisting others on their R learning journey."
 
 
 cat(sanitize_links(intro_text))
